@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/afredknot/react-portfolio-eh/static/css/main.8745ee71.css",
+    "main.js": "/afredknot/react-portfolio-eh/static/js/main.04898081.js",
+    "static/media/profilepic.png": "/afredknot/react-portfolio-eh/static/media/profilepic.6e0edfa6387de5682abf.png",
+    "index.html": "/afredknot/react-portfolio-eh/index.html",
+    "main.8745ee71.css.map": "/afredknot/react-portfolio-eh/static/css/main.8745ee71.css.map",
+    "main.04898081.js.map": "/afredknot/react-portfolio-eh/static/js/main.04898081.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8745ee71.css",
+    "static/js/main.04898081.js"
+  ]
+}
