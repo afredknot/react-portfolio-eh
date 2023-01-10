@@ -1,9 +1,16 @@
 import React from 'react';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import '../components/Form/style.css'
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+     
+     <Nav className ="justify-content-center align-items-center"  defaultActiveKey="/about">
+     <Navbar.Text className="justify-self-baseline"><h2>ᴅᴀɴɪᴇʟ ɴᴇʟꜱᴏɴ</h2></Navbar.Text>
+      
       <li className="nav-item">
+       
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -39,7 +46,8 @@ function NavTabs({ currentPage, handlePageChange }) {
           Resume
         </a>
       </li>
-    </ul>
+    </Nav>
+  
   );
 }
 
