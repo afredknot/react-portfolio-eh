@@ -5,9 +5,9 @@ import '../components/Form/style.css'
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-     
+    <Navbar.Text className="justify-content-center align-content-center"><h2>ᴅᴀɴɪᴇʟ ɴᴇʟꜱᴏɴ</h2>
      <Nav className ="justify-content-center align-items-center"  defaultActiveKey="/about">
-     <Navbar.Text className="justify-self-baseline"><h2>ᴅᴀɴɪᴇʟ ɴᴇʟꜱᴏɴ</h2></Navbar.Text>
+     
       
       <li className="nav-item">
        
@@ -47,7 +47,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </Nav>
-  
+    </Navbar.Text>
   );
 }
 

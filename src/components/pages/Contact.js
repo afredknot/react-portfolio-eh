@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import { useState } from 'react';
 import '../Form/style.css';
 import { validateEmail } from '../../utils/helpers';
+import emailjs from '@emailjs/browser';
 
-function Form() {
-  const [email, setEmail] = useState('');
+function Contact() {
+  const [reply_to, setReplyTo] = useState('');
   const [name, setName] = useState('');
   const [message, setInput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -15,36 +17,43 @@ function Form() {
     const inputValue = target.value;
 
     // Based on the input type, we set the state of either email, username, and password
-    if (inputType === 'email') {
-      setEmail(inputValue);
+    if (inputType === 'reply_to') {
+      return setReplyTo(inputValue);
     } else if (inputType === 'name') {
-      setName(inputValue);
+      return setName(inputValue);
     } else {
-      setInput(inputValue);
+      return setInput(inputValue);
     }
   };
 
+const burger = useRef();
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (!validateEmail(email) || !name) {
+      if (!validateEmail(reply_to) || !name) {
       setErrorMessage('Email is invalid');
-      return;
-    }
-    //  if (!checkInput(input)) {
-    //   setErrorMessage(
-    //     `Please enter message text`
-    //   );
-    //   return;
-
-    setName('');
-    setInput('');
-    setEmail('');
-  };
+      }else{
+    emailjs.sendForm('service_jfns7hc', 'template_ut6g61h', burger.current, 'hOne6PSrCPKPx8tUT')
+    
+          .then((result) => {
+            setErrorMessage('Your threw your paper airplane on a correct trajectory')
+            console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+     
+      
+        };
+      }
+ 
+    // setName('');
+    // setInput('');
+    // setEmail('');
+  
 
   return (
     <div>
       <h1>Contact Me Here</h1>
-      <form className="form">
+      <form className="form" ref={burger}>
         Name
         <input
           value={name}
@@ -56,8 +65,8 @@ function Form() {
         
         Email
         <input
-          value={email}
-          name="email"
+          value={reply_to}
+          name="reply_to"
           onChange={handleInputChange}
           type="email"
           placeholder="email"
@@ -82,5 +91,5 @@ function Form() {
       )}
     </div>
   );
-}
-export default Form;
+};
+export default Contact;
