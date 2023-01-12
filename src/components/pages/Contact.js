@@ -44,12 +44,7 @@ const burger = useRef();
       
         };
       }
- 
-    // setName('');
-    // setInput('');
-    // setEmail('');
   
-
   return (
     <div className='container col-4 align-content-center'>
       <h1 className='text-center'>Contact Me Here</h1>
