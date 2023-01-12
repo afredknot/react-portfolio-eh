@@ -51,10 +51,10 @@ const burger = useRef();
   
 
   return (
-    <div>
+    <div className='container col-4 align-content-center'>
       <h1 className='text-center'>Contact Me Here</h1>
     
-      <form className="form text-center mb-3" ref={burger}>
+      <form className="form text-center mb-3 " ref={burger}>
         Name
         <FormControl
           size="sm mb-4"
@@ -67,6 +67,7 @@ const burger = useRef();
         
         Email
         <FormControl
+          size="sm mb-4"
           value={reply_to}
           name="reply_to"
           onChange={handleInputChange}
@@ -75,12 +76,14 @@ const burger = useRef();
         />
         Message
         <FormControl
+          size="lg mb-5 col-sm-5"
           value={message}
           name="message"
           onChange={handleInputChange}
-          type="textarea"
+          type="With textarea"
           placeholder=""
           required
+          
         />
         <button type="button" onClick={handleFormSubmit}>
           Submit

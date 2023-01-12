@@ -5,7 +5,7 @@ const complete =
     "name": "Graphical Reservation",
     "github": "https://github.com/afredknot/Table-Reservation",
     "deployed":"https://graphical-restaurant.herokuapp.com/",
-    "img":""
+    "img":"../img/loginsignupmainpage.png"
 
   },
   {
@@ -27,7 +27,7 @@ const complete =
     "name": "Zodiac Playlist",
     "github":"https://github.com/LindsayK82/Group-Collab-One",
     "deployed": "https://lindsayk82.github.io/Group-Collab-One/",
-    "img": ""
+    "img": ["../img/Zodiac.jpg"]
   }
 ]  
 export default complete

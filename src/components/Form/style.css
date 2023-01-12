@@ -64,3 +64,9 @@ button {
  height: 700px;
 
 }
+.portfolio{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
