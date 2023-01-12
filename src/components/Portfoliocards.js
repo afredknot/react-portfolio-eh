@@ -1,30 +1,39 @@
 import React from 'react';
 
+// function importAll(r) {
+//   let images = {};
+//   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+//   return images;
+// }
 
-const ProjectList = ({ projects, title }) => {
-  if (!projects.length) {
-    return <h3>No Thoughts Yet</h3>;
-  }
+// const images = importAll(require.context('../assets/images', false, /.(png|jpe?g|svg|gif)$/)); 
+
+
+const Projects = ({ Projects }) => {
+  
 
   return (
-    <div>
-      <h3>{title}</h3>
-      {projects &&
-        projects.map((project) => (
-          <div key={project._id} className="card mb-3">
+    <div className= "cards">
+     
+      {Projects &&
+        Projects.map((project) => (
+          <a href={`${project.deployed}`}> <div key={project._id} className="card sm mb-3">
             <h4 className="card-header bg-primary text-light p-2 m-0">
-              {project.projectname} <br />
+            {/* <img className=" project-image " src={images[${project.image_file}]}></img> */}
+              {project.name} <br />
               <span style={{ fontSize: '1rem' }}>
-                had this thought on {project.createdAt}
+              
               </span>
-            </h4>
-            <div className="card-body bg-light p-2">
-              <p>{project.projectText}</p>
+            </h4> <a href={`${project.github}`}> Github Repo Link</a>
+           <div className="card-body bg-light p-2"> 
+              {/* <a href={`${project.deployed}`} > Deployed Application</a> */}
             </div>
           </div>
+          </a>
         ))}
     </div>
+    
   );
 };
 
-export default ProjectList;
+export default Projects;

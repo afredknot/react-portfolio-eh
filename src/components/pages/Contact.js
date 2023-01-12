@@ -3,7 +3,7 @@ import { useState } from 'react';
 import '../Form/style.css';
 import { validateEmail } from '../../utils/helpers';
 import emailjs from '@emailjs/browser';
-
+import { FormControl } from "react-bootstrap";
 function Contact() {
   const [reply_to, setReplyTo] = useState('');
   const [name, setName] = useState('');
@@ -52,19 +52,21 @@ const burger = useRef();
 
   return (
     <div>
-      <h1>Contact Me Here</h1>
-      <form className="form" ref={burger}>
+      <h1 className='text-center'>Contact Me Here</h1>
+    
+      <form className="form text-center mb-3" ref={burger}>
         Name
-        <input
+        <FormControl
+          size="sm mb-4"
           value={name}
           name="name"
           onChange={handleInputChange}
-          type="text"
-          placeholder="name"
+          type="text  "
+          placeholder="name "
         />
         
         Email
-        <input
+        <FormControl
           value={reply_to}
           name="reply_to"
           onChange={handleInputChange}
@@ -72,12 +74,12 @@ const burger = useRef();
           placeholder="email"
         />
         Message
-        <input
+        <FormControl
           value={message}
           name="message"
           onChange={handleInputChange}
           type="textarea"
-          placeholder="Contact"
+          placeholder=""
           required
         />
         <button type="button" onClick={handleFormSubmit}>

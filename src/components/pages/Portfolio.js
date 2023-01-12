@@ -1,12 +1,12 @@
 import React from 'react';
-import ProjectList from '../Portfoliocards';
-export default function Portfolio() {
+import Projects from "../PortfolioCards"
+import complete from '../../utils/ProjectsApi'
+ function Portfolio() {
   return (
     <div>
-      <h1>Portfolio</h1>
-      <p>
-      
-      </p>
+      <h1 className='text-center'>Portfolio</h1>
+      <Projects Projects = { complete } />
     </div>
   );
 }
+export default Portfolio
