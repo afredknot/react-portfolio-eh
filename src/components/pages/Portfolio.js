@@ -3,7 +3,7 @@ import Projects from "../PortfolioCards"
 import complete from '../../utils/ProjectsApi'
  function Portfolio() {
   return (
-    <div className='portfolio container  col-lg-4 text-center align-content-center'>
+    <div className='portfolio container  col-lg-4 text-center align-content-center '>
       <h1 className='head'>Portfolio</h1>
       <Projects Projects = { complete } />
       
