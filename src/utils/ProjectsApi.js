@@ -20,7 +20,7 @@ const complete =
     "name": "Text Editor PWA",
     "github": "https://github.com/afredknot/text-editor-eh",
     "deployed": "https://blooming-island-34745.herokuapp.com/",
-    "img": ""
+    "img": " "
   },
   {
     "id" : 4,
