@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/afredknot/react-portfolio-eh/static/css/main.f009e84f.css",
-    "main.js": "/afredknot/react-portfolio-eh/static/js/main.d3019656.js",
-    "static/media/profilepic.png": "/afredknot/react-portfolio-eh/static/media/profilepic.6e0edfa6387de5682abf.png",
-    "index.html": "/afredknot/react-portfolio-eh/index.html",
-    "main.f009e84f.css.map": "/afredknot/react-portfolio-eh/static/css/main.f009e84f.css.map",
-    "main.d3019656.js.map": "/afredknot/react-portfolio-eh/static/js/main.d3019656.js.map"
+    "main.css": "/react-portfolio-eh/static/css/main.ad5b266c.css",
+    "main.js": "/react-portfolio-eh/static/js/main.4b453ee0.js",
+    "static/media/profilepic.png": "/react-portfolio-eh/static/media/profilepic.6e0edfa6387de5682abf.png",
+    "static/media/favicon1.ico": "/react-portfolio-eh/static/media/favicon1.69ffd9cd5a846c976177.ico",
+    "static/media/linkedin.png": "/react-portfolio-eh/static/media/linkedin.29faf42dbea2cca10f41.png",
+    "index.html": "/react-portfolio-eh/index.html",
+    "main.ad5b266c.css.map": "/react-portfolio-eh/static/css/main.ad5b266c.css.map",
+    "main.4b453ee0.js.map": "/react-portfolio-eh/static/js/main.4b453ee0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f009e84f.css",
-    "static/js/main.d3019656.js"
+    "static/css/main.ad5b266c.css",
+    "static/js/main.4b453ee0.js"
   ]
 }
