@@ -9,8 +9,8 @@ export default function About() {
       </div>
       <p className="text-center text-wrap" >
         Welcome to my portfolio created with React.
-         My name is Daniel and I am working to become a fully employed Fullstack Developer.
-         My main focuses are fullstack and devops and team management. I've managed many teams in the past, from 3 people to over 50. I look forward to being able to bring some well rounded experience to your place of employed coders.
+         My name is Daniel and I am working to become a fully employed Fullstack Developer.</p>
+        <p> My main focuses are fullstack and devops and team management. I've managed many teams in the past, from 3 people to over 50. I look forward to being able to bring some well rounded experience to your place of employed coders.
 
       </p>
     </div>

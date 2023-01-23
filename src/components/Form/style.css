@@ -1,50 +1,43 @@
-:root{
+:root {
   --border-style: solid;
   --border-width: 3px;
   --padding: 10px;
   --margin: 20px;
- 
 }
-
-
-*{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
-  
 }
-
-body{ 
+body {
   display: relative;
   flex-direction: column;
   flex-wrap: wrap;
   grid-auto-flow: column;
-  background-image: linear-gradient(45deg, rgba(87, 125, 143, 0.775),
-  rgb(82, 154, 198));
+  background-image: linear-gradient(
+    45deg,
+    rgba(87, 125, 143, 0.775),
+    rgb(82, 154, 198)
+  );
 }
-
 .form {
   margin: 20px;
 }
-
 .form input {
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
 }
-
-.toilet{
+.toilet {
   /* justify-content: center; */
   align-items: stretch;
-  justify-content:space-between ;
-height:70px;
-
-
+  justify-content: space-between;
+  height: 70px;
 }
-input{
-  width:40px;
+input {
+  width: 40px;
 }
-.resume{
+.resume {
   align-items: center;
 }
 button {
@@ -53,20 +46,18 @@ button {
 .footer {
   position: fixed;
   left: 0;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   background-color: rgb(45, 43, 43);
   color: white;
   text-align: center;
 }
 .cards {
-  width:500px;
- height: 700px;
-
+  width: 500px;
+  height: 700px;
 }
-.portfolio{
-  display:flex;
+.portfolio {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
 }

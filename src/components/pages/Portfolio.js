@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from "../PortfolioCards"
+import Projects from "../Portfoliocards"
 import complete from '../../utils/ProjectsApi'
  function Portfolio() {
   return (
