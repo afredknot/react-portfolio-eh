@@ -8,11 +8,12 @@ const complete =
     "img":"../img/loginsignupmainpage.png"
 
   },
-  {"id" : 2,
+  {
+  "id" : 2,
   "name": "Study Table",
   "github":"https://github.com/afredknot/Study-Table",
   "deployed": "https://secret-taiga-82685.herokuapp.com/",
-  "img": ""
+  "img":""
 },
   {
     "id" : 3,
